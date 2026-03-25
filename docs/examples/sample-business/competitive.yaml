@@ -1,0 +1,50 @@
+# Acme Front Desk Competitive Positioning
+
+only_we_statements:
+  - "Only Acme Front Desk answers calls AND texts in your brand's voice from day one"
+  - "Only Acme Front Desk starts at $0/month with no contract"
+  - "Only Acme Front Desk sets up in under 5 minutes"
+  - "Only Acme Front Desk handles calls, texts, scheduling, and FAQs in one front desk"
+  - "Only Acme Front Desk gives you real-time analytics across every customer interaction"
+  - "Only Acme Front Desk scales from 1 location to 50 with the same platform"
+  - "Only Acme Front Desk gives you your time back — not just more software to manage"
+
+comparison_table:
+  voicemail:
+    cost: "Free"
+    availability: "Always on"
+    customer_experience: "Poor — most callers hang up"
+    conversion_rate: "5-10%"
+    setup: "None"
+  answering_service:
+    cost: "$200-500/month + per-call fees"
+    availability: "Business hours or 24/7 at premium"
+    customer_experience: "Generic, scripted"
+    conversion_rate: "30-40%"
+    setup: "Days to weeks"
+  other_ai:
+    cost: "$100-300/month"
+    availability: "24/7"
+    customer_experience: "Robotic, limited"
+    conversion_rate: "20-35%"
+    setup: "Hours to days"
+  receptionist:
+    cost: "$3,000-4,500/month"
+    availability: "Business hours only"
+    customer_experience: "Excellent when available"
+    conversion_rate: "50-60%"
+    setup: "Weeks to hire and train"
+  our_product:
+    cost: "$0-149/month"
+    availability: "24/7"
+    customer_experience: "Natural, brand-aligned"
+    conversion_rate: "55-70%"
+    setup: "Under 5 minutes"
+
+key_differentiators:
+  - "Multi-channel front desk — calls, texts, and web chat in one place"
+  - "Brand-voice customization from first interaction"
+  - "Zero upfront cost with pay-as-you-grow pricing"
+  - "Sub-5-minute setup with no technical skills needed"
+  - "Real-time analytics across all customer interactions"
+  - "Seamless handoff to human when needed"

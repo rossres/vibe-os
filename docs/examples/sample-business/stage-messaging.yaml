@@ -1,0 +1,22 @@
+# Acme Front Desk Stage-Based Messaging Templates
+# {vertical} and {revenue} are replaced at runtime
+
+identified:
+  headline: "Your {vertical} has a number waiting — claim it before someone else does"
+  cta: "Claim your number"
+
+aware:
+  headline: "Every missed call or text costs your {vertical} {revenue} — stop losing customers"
+  cta: "Claim your number and hear it live"
+
+interested:
+  headline: "{vertical} owners are getting their nights and weekends back — while every customer still gets answered"
+  cta: "Claim your number — try it free"
+
+consider:
+  headline: "Your {vertical}'s front desk is built and waiting — calls, texts, and bookings covered 24/7"
+  cta: "Claim your number and go live today"
+
+selecting:
+  headline: "Your front desk is ready — never miss a customer again"
+  cta: "Claim your number — live in 5 minutes"

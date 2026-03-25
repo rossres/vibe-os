@@ -1,0 +1,361 @@
+# Acme Front Desk Vertical Templates
+# Each vertical defines its target market segment with pain points,
+# revenue impact, features, language substitutions, and tone.
+
+nail-beauty:
+  display_name: "Nail & Beauty Salon"
+  tier: a
+  pain_points:
+    - "Missed calls during appointments when hands are busy"
+    - "No-shows and last-minute cancellations"
+    - "Clients booking through DMs instead of calling"
+  demo_hook: "Your techs can't pick up the phone mid-manicure"
+  revenue_per_missed_interaction: "$40-80"
+  key_features:
+    - "Appointment booking and confirmation"
+    - "Service menu and pricing answers"
+    - "Waitlist management"
+  ranked_features:
+    - feature: "Appointment booking"
+      why: "Hands busy = missed bookings. This is the #1 job."
+    - feature: "After-hours answering"
+      why: "Clients call/text evenings to book next-day slots."
+    - feature: "Service menu & pricing answers"
+      why: "Reduces DM back-and-forth."
+    - feature: "Spam call filtering"
+      why: "Emotional win — no more junk interruptions."
+    - feature: "Waitlist management"
+      why: "Fills cancellation gaps automatically."
+  language:
+    customer: "client"
+    business: "salon"
+    appointment: "appointment"
+  tone: standard
+
+spa-wellness:
+  display_name: "Spa & Wellness"
+  tier: a
+  pain_points:
+    - "Phone ringing disrupts the calm experience"
+    - "Complex service menus overwhelm front desk"
+    - "High-value packages lost to voicemail"
+  demo_hook: "A ringing phone ruins the calm experience you work so hard to create"
+  revenue_per_missed_interaction: "$80-200"
+  key_features:
+    - "Package and membership inquiries"
+    - "Appointment scheduling"
+    - "Gift certificate handling"
+  ranked_features:
+    - feature: "Appointment scheduling"
+      why: "Core job — booking treatments without disrupting the spa."
+    - feature: "Package & membership inquiries"
+      why: "High-ticket upsell happens on the phone."
+    - feature: "After-hours answering"
+      why: "Evenings and weekends are peak booking windows."
+    - feature: "Gift certificate handling"
+      why: "Seasonal revenue driver — holiday, birthday, etc."
+    - feature: "Spam call filtering"
+      why: "Protects the calm environment."
+  language:
+    customer: "guest"
+    business: "spa"
+    appointment: "appointment"
+  tone: professional
+
+medspa:
+  display_name: "Med Spa"
+  tier: a
+  pain_points:
+    - "High-ticket consultations lost to voicemail after hours"
+    - "Clients texting about pricing and availability with no one to reply"
+    - "Staff pulled from treatments to answer basic booking questions"
+  demo_hook: "A $500 Botox consultation just went to voicemail — she's already calling the next med spa"
+  revenue_per_missed_interaction: "$200-800"
+  key_features:
+    - "Consultation and treatment booking"
+    - "Pricing and package inquiries"
+    - "Pre-appointment instructions and follow-up"
+  ranked_features:
+    - feature: "Consultation booking"
+      why: "Each consult is $200-800. This is the money feature."
+    - feature: "After-hours capture"
+      why: "Most inquiries happen evenings/weekends when staff is gone."
+    - feature: "Pricing & package answers"
+      why: "Clients comparison-shop — instant answers win."
+    - feature: "Text-back with booking links"
+      why: "Clients text first. Instant link = instant conversion."
+    - feature: "Pre-appointment instructions"
+      why: "Reduces no-shows and preps clients for treatment."
+  language:
+    customer: "client"
+    business: "med spa"
+    appointment: "consultation"
+  tone: professional
+
+medical-dental:
+  display_name: "Medical & Dental"
+  tier: a
+  pain_points:
+    - "Patients calling after 5pm get voicemail"
+    - "Staff overwhelmed with scheduling calls"
+    - "Insurance and billing questions tie up the line"
+  demo_hook: "After 5pm, your patients hit voicemail — and call the next provider"
+  revenue_per_missed_interaction: "$150-400"
+  key_features:
+    - "Patient scheduling and rescheduling"
+    - "Insurance verification routing"
+    - "After-hours triage routing"
+  ranked_features:
+    - feature: "Patient scheduling"
+      why: "Volume driver — scheduling calls are 60%+ of inbound."
+    - feature: "After-hours triage routing"
+      why: "Urgent patients need routing, not voicemail."
+    - feature: "Insurance verification routing"
+      why: "Frees staff from repetitive coverage questions."
+    - feature: "Appointment reminders"
+      why: "Reduces no-shows which cost $150-400 each."
+    - feature: "Spam call filtering"
+      why: "Medical offices get hammered with spam."
+  language:
+    customer: "patient"
+    business: "practice"
+    appointment: "appointment"
+  tone: professional
+
+home-services:
+  display_name: "Home Services"
+  tier: b
+  pain_points:
+    - "Emergency calls missed while on a job"
+    - "Seasonal spikes overwhelm small teams"
+    - "Leads go cold waiting for a callback"
+  demo_hook: "Emergency calls don't wait — and neither do your competitors"
+  revenue_per_missed_interaction: "$200-800"
+  key_features:
+    - "Emergency dispatch routing"
+    - "Quote request intake"
+    - "Scheduling and availability"
+  ranked_features:
+    - feature: "Lead capture & quote intake"
+      why: "Every missed call is a $200-800 job to a competitor."
+    - feature: "Emergency dispatch routing"
+      why: "Urgent calls need instant triage, not voicemail."
+    - feature: "Scheduling and availability"
+      why: "Books jobs while the crew is on-site."
+    - feature: "After-hours answering"
+      why: "Evenings and weekends are when homeowners call."
+    - feature: "Service area verification"
+      why: "Filters out-of-area leads before they waste time."
+  language:
+    customer: "customer"
+    business: "business"
+    appointment: "job"
+  tone: standard
+
+hvac:
+  display_name: "HVAC"
+  tier: a
+  pain_points:
+    - "2am emergency calls go straight to voicemail"
+    - "Seasonal demand spikes overwhelm the office"
+    - "Technicians in the field can't answer dispatch calls"
+  demo_hook: "When the AC dies at 2am, your customer calls you first — then your competitor"
+  revenue_per_missed_interaction: "$300-800"
+  key_features:
+    - "24/7 emergency dispatch"
+    - "Service scheduling"
+    - "Maintenance plan inquiries"
+  ranked_features:
+    - feature: "24/7 emergency dispatch"
+      why: "AC/heat failures are urgent. First to answer wins the $500+ job."
+    - feature: "After-hours answering"
+      why: "2am calls are the highest-value leads."
+    - feature: "Service scheduling"
+      why: "Books routine maintenance while techs are in the field."
+    - feature: "Lead capture & quote intake"
+      why: "Seasonal spikes overwhelm — capture every lead."
+    - feature: "Maintenance plan inquiries"
+      why: "Recurring revenue driver."
+  language:
+    customer: "customer"
+    business: "company"
+    appointment: "service call"
+  tone: standard
+
+plumbing:
+  display_name: "Plumbing"
+  tier: a
+  pain_points:
+    - "Emergency leaks can't wait for a callback"
+    - "Customers need immediate answers on availability"
+    - "After-hours calls are the highest-value leads"
+  demo_hook: "When a pipe bursts, your customer isn't leaving a voicemail"
+  revenue_per_missed_interaction: "$200-600"
+  key_features:
+    - "Emergency routing and dispatch"
+    - "Service area verification"
+    - "Quote request intake"
+  ranked_features:
+    - feature: "Emergency routing & dispatch"
+      why: "Burst pipe = urgent. First plumber to answer gets the $400+ job."
+    - feature: "After-hours answering"
+      why: "Emergencies don't happen 9-5."
+    - feature: "Quote request intake"
+      why: "Captures lead details so you can call back with a price."
+    - feature: "Service area verification"
+      why: "Filters out-of-area callers before wasting a trip."
+    - feature: "Scheduling and availability"
+      why: "Books routine jobs while you're on-site."
+  language:
+    customer: "customer"
+    business: "company"
+    appointment: "service call"
+  tone: standard
+
+coffee:
+  display_name: "Coffee Shop"
+  tier: c
+  pain_points:
+    - "Simple questions like hours and menu tie up baristas"
+    - "Catering and large order inquiries get lost"
+    - "Staff too busy during rush to answer"
+  demo_hook: "Your baristas shouldn't have to stop pulling shots for simple questions"
+  revenue_per_missed_interaction: "$15-50"
+  key_features:
+    - "Hours, location, and menu answers"
+    - "Catering order intake"
+    - "Event space inquiries"
+  ranked_features:
+    - feature: "FAQ answers (hours, menu, location)"
+      why: "90% of calls are simple Qs. Automate them."
+    - feature: "Catering & large order intake"
+      why: "The real money — $200+ catering orders get lost."
+    - feature: "Text-back with ordering links"
+      why: "Text-first customers want a link, not a phone tree."
+    - feature: "Event space inquiries"
+      why: "High-value bookings that require follow-up."
+  language:
+    customer: "customer"
+    business: "shop"
+    appointment: "order"
+  tone: standard
+
+restaurant:
+  display_name: "Restaurant"
+  tier: b
+  pain_points:
+    - "Reservation calls missed during rush hour"
+    - "Large party and event inquiries go to voicemail"
+    - "Staff stretched thin between tables and phone"
+  demo_hook: "During rush hour, every missed call is an empty table"
+  revenue_per_missed_interaction: "$50-200"
+  key_features:
+    - "Reservation booking"
+    - "Event and private dining inquiries"
+    - "Hours, menu, and allergy answers"
+  ranked_features:
+    - feature: "Reservation booking"
+      why: "Empty tables = lost revenue. This is the core job."
+    - feature: "Large party & event inquiries"
+      why: "High-ticket — $500+ private dining gets lost to voicemail."
+    - feature: "Hours, menu & allergy answers"
+      why: "Frees staff from repetitive questions during service."
+    - feature: "After-hours answering"
+      why: "Guests plan dinner after work — peak call time is 5-8pm."
+    - feature: "Waitlist & cancellation fills"
+      why: "Turns cancellations into revenue."
+  language:
+    customer: "guest"
+    business: "restaurant"
+    appointment: "reservation"
+  tone: standard
+
+law:
+  display_name: "Law Firm"
+  tier: b
+  pain_points:
+    - "First call from a potential client often decides retention"
+    - "After-hours calls from distressed clients get voicemail"
+    - "Intake process needs to capture key details immediately"
+  demo_hook: "A potential client's first call decides if they hire you or the next firm"
+  revenue_per_missed_interaction: "$5,000-50,000"
+  key_features:
+    - "Client intake screening"
+    - "Urgency-based routing"
+    - "Consultation scheduling"
+  ranked_features:
+    - feature: "Client intake screening"
+      why: "First-call capture decides if they hire you or the next firm."
+    - feature: "Urgency-based routing"
+      why: "Criminal/family law calls are time-sensitive — needs triage."
+    - feature: "After-hours answering"
+      why: "Distressed clients call nights/weekends. Voicemail = lost case."
+    - feature: "Consultation scheduling"
+      why: "Books the intake meeting without phone tag."
+    - feature: "Spam call filtering"
+      why: "Law firms are top spam targets."
+  language:
+    customer: "client"
+    business: "firm"
+    appointment: "consultation"
+  tone: professional
+
+automotive:
+  display_name: "Automotive / Auto Repair"
+  tier: b
+  pain_points:
+    - "Techs working in the bay can't answer phones"
+    - "Customers calling for status updates tie up the counter"
+    - "New customer inquiries lost during busy days"
+  demo_hook: "Your best techs are under a hood, not at the front desk"
+  revenue_per_missed_interaction: "$100-500"
+  key_features:
+    - "Appointment scheduling"
+    - "Repair status updates"
+    - "Service pricing and estimates"
+  ranked_features:
+    - feature: "Appointment scheduling"
+      why: "New customer bookings are the revenue driver."
+    - feature: "Repair status updates"
+      why: "Frees the counter from 'is my car ready?' calls."
+    - feature: "Service pricing & estimates"
+      why: "Customers comparison-shop — fast answers win."
+    - feature: "After-hours answering"
+      why: "Car breaks down at night — they're searching for a shop."
+    - feature: "Spam call filtering"
+      why: "Auto shops get heavy warranty/marketing spam."
+  language:
+    customer: "customer"
+    business: "shop"
+    appointment: "appointment"
+  tone: standard
+
+pet-services:
+  display_name: "Pet Grooming & Vet"
+  tier: b
+  pain_points:
+    - "Groomers driving between appointments can't answer the phone"
+    - "Pet parents text for availability and get no reply"
+    - "After-hours emergencies need immediate triage"
+  demo_hook: "You're mid-groom or on the road — and a new client just called"
+  revenue_per_missed_interaction: "$60-150"
+  key_features:
+    - "Appointment booking and reminders"
+    - "Service menu and breed-specific pricing"
+    - "Emergency vet routing"
+  ranked_features:
+    - feature: "Appointment booking"
+      why: "Mobile groomers can't answer while driving. This is the core job."
+    - feature: "Text-back with booking links"
+      why: "Pet parents text first — instant link converts."
+    - feature: "Service menu & breed-specific pricing"
+      why: "Breed/size pricing is complex — automate the FAQ."
+    - feature: "After-hours answering"
+      why: "Vet emergencies need triage, not voicemail."
+    - feature: "Appointment reminders"
+      why: "Reduces no-shows for recurring groom schedules."
+  language:
+    customer: "pet parent"
+    business: "business"
+    appointment: "appointment"
+  tone: standard

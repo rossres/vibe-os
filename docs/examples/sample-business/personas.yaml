@@ -1,0 +1,52 @@
+# Acme Front Desk Buyer Personas
+
+sofia:
+  description: >
+    Solo or micro-business owner doing everything herself.
+    She is the technician, the receptionist, and the bookkeeper.
+  role: primary
+  employee_range: "0-5"
+  revenue_range: "$150K-$600K"
+  pain_points:
+    - "Misses calls while working with clients"
+    - "Can't afford a full-time receptionist"
+    - "Loses new clients to competitors who answer first"
+  communication_style: "Direct, practical, wants proof before committing"
+  decision_factors:
+    - "Price and ROI"
+    - "Ease of setup"
+    - "Proof from similar businesses"
+
+david:
+  description: >
+    Growing multi-location operator managing 10-50 employees.
+    He needs systems that scale across locations.
+  role: secondary
+  employee_range: "10-50"
+  revenue_range: "$800K-$3M"
+  pain_points:
+    - "Inconsistent call handling across locations"
+    - "High front desk turnover"
+    - "No visibility into missed call volume"
+  communication_style: "Data-driven, wants metrics and dashboards"
+  decision_factors:
+    - "Multi-location support"
+    - "Analytics and reporting"
+    - "Integration with existing systems"
+
+rachel:
+  description: >
+    The office manager or front desk lead who fields the calls daily.
+    She influences the buying decision from the inside.
+  role: influencer
+  employee_range: "5-20"
+  revenue_range: "$400K-$1.5M"
+  pain_points:
+    - "Overwhelmed juggling walk-ins and phone calls"
+    - "Blamed when calls are missed"
+    - "Wants tools that make her job easier, not replace her"
+  communication_style: "Collaborative, wants to feel supported not threatened"
+  decision_factors:
+    - "Ease of daily use"
+    - "Doesn't replace her role"
+    - "Reduces her stress and workload"

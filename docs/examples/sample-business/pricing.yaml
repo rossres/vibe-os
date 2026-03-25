@@ -1,0 +1,46 @@
+# Acme Front Desk Pricing Model
+
+tiers:
+  - name: "Flex"
+    price: "$0"
+    included_minutes: 60
+    overage_rate: "$1.50/min"
+    features:
+      - "Pay only for what you use"
+      - "60 included minutes"
+      - "Basic call handling"
+      - "Business hours coverage"
+
+  - name: "Starter"
+    price: "$99"
+    included_minutes: 600
+    overage_rate: "$1.25/min"
+    features:
+      - "600 included minutes"
+      - "24/7 coverage"
+      - "Custom greeting"
+      - "Call summaries and transcripts"
+      - "Appointment scheduling"
+
+  - name: "Growth"
+    price: "$149"
+    included_minutes: 1000
+    overage_rate: "$1.00/min"
+    features:
+      - "1,000 included minutes"
+      - "24/7 coverage"
+      - "Multi-location support"
+      - "Advanced analytics"
+      - "Priority support"
+      - "Custom integrations"
+
+roi_framing: >
+  Most businesses lose 3-5 calls per day.
+  At $100+ per missed opportunity, Acme Front Desk pays for itself in the first week.
+
+per_unit_cost: "$0.15-0.25 per answered minute"
+per_missed_interaction_loss: "$100-500 average across verticals"
+
+competitor_comparison: >
+  Traditional answering services charge $2-5/min with long contracts.
+  Acme Front Desk starts at $0/month with no commitment.

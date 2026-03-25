@@ -1,0 +1,176 @@
+voice:
+  tone: "business coach, not tech vendor"
+  warmth: high
+  directness: high
+  vocabulary:
+    prefer:
+      - "front desk"
+      - "answered"
+      - "every call"
+      - "every customer"
+      - "your business"
+      - "customers"
+      - "calls and texts"
+      - "peace of mind"
+    avoid:
+      - "AI receptionist"
+      - "handled"
+      - "processed"
+      - "leverage"
+      - "synergy"
+      - "omnichannel"
+      - "communication suite"
+      - "platform"
+  style: "Warm, direct, practical — talks like a business owner who gets it"
+
+# Narrative Framework Framework
+# The customer is the HERO. Acme Front Desk is the GUIDE.
+narrative:
+  hero: "The business owner — busy, responsible for everything, trying to grow and take care of customers, but also wants a life outside the business."
+
+  what_they_want:
+    - "run a successful business"
+    - "take care of every customer"
+    - "not feel chained to their phone"
+  desire: "peace of mind, consistency, control"
+
+  problem:
+    external:
+      - "missed calls"
+      - "missed texts"
+      - "messages coming in at all hours"
+    internal: "I can't be on my phone 24/7… but I also don't want to miss anything."
+    internal_emotions:
+      - "stress"
+      - "guilt"
+      - "constant checking"
+    philosophical: "You shouldn't have to choose between running your business and living your life."
+
+  guide:
+    empathy: "We understand — running a business can take over your life."
+    authority: "Acme Front Desk answers calls and texts like a real person on your team — 24/7."
+
+  plan:
+    step_1: "Connect your business — we plug into your phone, text, and website."
+    step_2: "Every customer gets a fast response, helpful answers, and clear next steps."
+    step_3: "Missed moments become real conversations. Conversations become bookings."
+
+  failure:
+    - "you keep checking your phone"
+    - "you keep missing moments"
+    - "the business keeps depending on you for everything"
+
+  success:
+    outcomes:
+      - "every customer gets taken care of"
+      - "your business keeps moving, even when you're not on your phone"
+      - "things feel more organized and under control"
+    life_benefits:
+      - "family dinners without checking your phone"
+      - "weekends without worrying about missing something"
+      - "time back — because nothing is going unanswered"
+
+  one_liner: "You run your business. We make sure you never miss a customer again."
+  core_idea: "We're not replacing you. We're making sure your business is always there — even when you're not."
+
+  cta:
+    primary: "Start your free setup"
+    secondary: "See how your business responds today"
+
+# ──────────────────────────────────────────────
+# CANONICAL NARRATIVE — SOURCE OF TRUTH
+# Nothing gets written unless it aligns with this.
+# If a vertical page conflicts with canonical, canonical wins.
+# ──────────────────────────────────────────────
+canonical:
+  # 1. Hero — NEVER the product
+  hero: "The business owner is always the hero. Never the product."
+
+  # 2. Core Promise — DO NOT CHANGE PER PAGE
+  promise: "You run your business. We make sure every call and text gets answered."
+
+  # 3. Category — must NEVER drift
+  category: "AI front desk for local businesses"
+
+  # 4. Core Mechanism — always present on every page
+  mechanism:
+    - "calls"
+    - "texts"
+    - "website"
+
+  # 5. Emotional Frame — every page must include all three
+  emotional_frame:
+    internal_problem: "I can't be on my phone 24/7… but I also don't want to miss anything."
+    philosophical_problem: "You shouldn't have to choose between running your business and living your life."
+    heart_plus_wallet: "Every page must pair a revenue benefit with a life benefit."
+
+# ──────────────────────────────────────────────
+# GOVERNANCE RULES
+# These prevent drift over time.
+# ──────────────────────────────────────────────
+governance:
+  rules:
+    - "Homepage > everything. If a vertical conflicts with homepage, homepage wins."
+    - "No new narratives. No page can introduce a new category, promise, or framing. Only adaptation allowed."
+    - "Every page must answer: What do they do? How do they lose money? What is it worth? How do we fix it? What do they gain (money + life)?"
+    - "Multi-channel always present. Calls + texts must appear, even if subtle."
+    - "Hero = owner. Always. Never the product."
+
+  validation_checklist:
+    - "hero_is_owner: the business owner is the hero, not Acme Front Desk"
+    - "mentions_calls_and_texts: multi-channel anchor is present"
+    - "has_internal_problem: stress, guilt, or constant checking"
+    - "has_philosophical_problem: unfairness of the tradeoff"
+    - "has_heart_benefit: time back, family, peace of mind"
+    - "has_wallet_benefit: bookings, revenue, customers saved"
+    - "has_money_unit: vertical-specific dollar value per missed interaction"
+
+# Positioning (legacy reference — canonical is the source of truth)
+positioning:
+  category: "AI front desk for local businesses"
+  not: "AI phone answering service"
+  channels:
+    - "calls"
+    - "texts"
+    - "web chat"
+  frame: "Every customer gets answered — no matter how they reach you."
+
+verticals:
+  tier_a:
+    - "nail-beauty"
+    - "spa-wellness"
+    - "hvac"
+    - "plumbing"
+    - "medical-dental"
+  tier_b:
+    - "home-services"
+    - "dental"
+    - "restaurant"
+    - "pet-services"
+    - "law"
+    - "automotive"
+  tier_c:
+    - "coffee"
+    - "roofing"
+    - "landscaping"
+    - "cleaning"
+    - "pest-control"
+    - "electrical"
+    - "fitness"
+    - "photography"
+    - "real-estate"
+    - "insurance"
+    - "accounting"
+    - "chiropractic"
+    - "veterinary"
+    - "tattoo"
+
+personas:
+  primary: "sofia"
+  secondary: "david"
+  influencer: "rachel"
+
+compliance:
+  physical_address: ""
+  unsubscribe_url: ""
+  data_retention_days: 365

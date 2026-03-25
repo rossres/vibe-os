@@ -1,0 +1,29 @@
+node_modules/
+dist/
+data/*.db
+data/*.db-journal
+.env
+.DS_Store
+*.tsbuildinfo
+.worktrees/
+
+# Your brand config (keep the example, not your actual config)
+config/brand.yaml
+config/verticals.yaml
+config/personas.yaml
+
+# Generated content
+output/
+
+# Knowledge base
+knowledge/
+
+# Internal strategy docs (keep only examples/)
+docs/*.md
+docs/superpowers/
+
+# PZ-specific scripts (keep only generic ones)
+scripts/audit-notion.ts
+scripts/audit-site.ts
+scripts/push-launch-checklist.ts
+scripts/add-todo.ts

@@ -1,0 +1,159 @@
+# ============================================================
+# Vibe OS — Brand Configuration
+# ============================================================
+# This is the single source of truth for your brand, messaging,
+# and go-to-market strategy. Every agent, copywriter prompt,
+# landing page, and dashboard reads from this file.
+#
+# Fill this in during the guided setup (Step 2: Brand Brain)
+# or manually before running the engine.
+#
+# See docs/examples/sample-business/ for a complete working example.
+# ============================================================
+
+# ── PROJECT IDENTITY ──
+project:
+  name: ""                    # Your company/product name
+  tagline: ""                 # One-line description
+  category: ""                # e.g., "AI front desk for local businesses"
+  website: ""                 # e.g., "https://yourcompany.com"
+
+# ── BRAND VOICE ──
+# How your brand sounds across all generated content.
+voice:
+  tone: ""                    # e.g., "business coach, not tech vendor"
+  warmth: ""                  # low | medium | high
+  directness: ""              # low | medium | high
+  style: ""                   # e.g., "Warm, direct, practical — talks like a friend who gets it"
+  vocabulary:
+    prefer: []                # Words to always use (e.g., "customers", "your business")
+    avoid: []                 # Words to never use (e.g., "leverage", "synergy", "platform")
+
+# ── NARRATIVE FRAMEWORK ──
+# The customer is the HERO. Your product is the GUIDE.
+# This drives all copy generation.
+narrative:
+  hero: ""                    # Who is the hero? (e.g., "The business owner")
+
+  what_they_want:             # What does the hero desire?
+    - ""
+  desire: ""                  # The emotional desire (e.g., "peace of mind, control")
+
+  problem:
+    external: []              # Tangible problems (e.g., "missed calls", "lost leads")
+    internal: ""              # The feeling (e.g., "I can't do it all but I don't want to miss anything")
+    internal_emotions: []     # Specific emotions (e.g., "stress", "guilt")
+    philosophical: ""         # The unfairness (e.g., "You shouldn't have to choose between X and Y")
+
+  guide:
+    empathy: ""               # Show you understand (e.g., "We get it — running a business is hard")
+    authority: ""             # Show you can help (e.g., "We do X like a real person on your team")
+
+  plan:
+    step_1: ""                # How they start (e.g., "Connect your business")
+    step_2: ""                # What happens next (e.g., "Every customer gets a response")
+    step_3: ""                # The outcome (e.g., "Missed moments become bookings")
+
+  failure: []                 # What happens if they don't act
+
+  success:
+    outcomes: []              # Tangible wins (wallet benefits)
+    life_benefits: []         # Emotional wins (heart benefits)
+
+  one_liner: ""               # The canonical one-liner
+  core_idea: ""               # The deeper positioning statement
+
+  cta:
+    primary: ""               # Main call-to-action (e.g., "Start free trial")
+    secondary: ""             # Softer CTA (e.g., "See how it works")
+
+# ── CANONICAL NARRATIVE ──
+# These 5 things NEVER change per page or per vertical.
+# If a vertical page conflicts with canonical, canonical wins.
+canonical:
+  hero: ""                    # e.g., "The business owner is always the hero. Never the product."
+  promise: ""                 # e.g., "You run your business. We make sure X."
+  category: ""                # Must match project.category
+  mechanism: []               # Core channels/methods (e.g., ["calls", "texts", "website"])
+  emotional_frame:
+    internal_problem: ""      # The internal tension
+    philosophical_problem: "" # The unfairness
+    heart_plus_wallet: ""     # Rule: "Every page must pair a revenue benefit with a life benefit."
+
+# ── GOVERNANCE RULES ──
+# Prevent messaging drift over time.
+governance:
+  rules: []
+  # Example rules:
+  # - "Homepage > everything. If a vertical conflicts with homepage, homepage wins."
+  # - "No new narratives. No page can introduce a new category or promise."
+  # - "Hero = owner. Always. Never the product."
+
+  validation_checklist: []
+  # Example checks:
+  # - "hero_is_owner: the business owner is the hero, not the product"
+  # - "mentions_core_mechanism: core mechanism anchor is present"
+  # - "has_internal_problem: emotional tension referenced"
+  # - "has_heart_benefit: life/time/freedom benefit"
+  # - "has_wallet_benefit: revenue/savings/growth benefit"
+
+# ── VERTICALS ──
+# Market segments you target. Organize by priority tier.
+# Full vertical definitions go in config/verticals.yaml
+verticals:
+  tier_a: []                  # Highest priority (e.g., ["medspa", "hvac", "plumbing"])
+  tier_b: []                  # Secondary
+  tier_c: []                  # Exploratory
+
+# ── PERSONAS ──
+# Buyer personas. Full definitions go in config/personas.yaml
+personas:
+  primary: ""                 # e.g., "sofia"
+  secondary: ""               # e.g., "david"
+  influencer: ""              # e.g., "rachel"
+
+# ── PRICING ──
+# Pricing model. Full definitions go in config/pricing.yaml
+pricing:
+  tiers: []
+  # Example tier:
+  # - name: "Starter"
+  #   price: "$99"
+  #   included_units: 600
+  #   overage_rate: "$1.25/unit"
+  #   features: ["Feature A", "Feature B"]
+  roi_framing: ""             # How to frame the ROI story
+  per_unit_cost: ""           # Cost per unit of service
+  per_missed_interaction_loss: ""  # What a missed opportunity costs
+  competitor_comparison: ""   # How you compare on price
+
+# ── COMPETITIVE POSITIONING ──
+competitive:
+  only_we_statements: []      # Things only your product does
+  key_differentiators: []     # Top 5-7 differentiators
+  comparison_table: {}        # Competitor comparison (see examples)
+
+# ── STAGE MESSAGING ──
+# Templates for each awareness stage. Uses {vertical} and {revenue} placeholders.
+stage_messaging:
+  identified:
+    headline: ""
+    cta: ""
+  aware:
+    headline: ""
+    cta: ""
+  interested:
+    headline: ""
+    cta: ""
+  consider:
+    headline: ""
+    cta: ""
+  selecting:
+    headline: ""
+    cta: ""
+
+# ── COMPLIANCE ──
+compliance:
+  physical_address: ""
+  unsubscribe_url: ""
+  data_retention_days: 365

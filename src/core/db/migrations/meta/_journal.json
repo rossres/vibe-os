@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1773725591722,
+      "tag": "0000_natural_warbound",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1774317214240,
+      "tag": "0001_purple_rocket_racer",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1774319695740,
+      "tag": "0002_brainy_lady_mastermind",
+      "breakpoints": true
+    }
+  ]
+}
