@@ -1,12 +1,16 @@
 ---
 project_name: ""
+business_type: ""
 started_at: ""
 steps_completed: []
 steps_skipped: []
 rerun_queue: []
 session_goals: ""
-primary_vertical: ""
+primary_segment: ""
 target_customers: ""
+gtm_motion: ""
+phase1_agents: []
+phase1_channels: []
 budget: ""
 timeline: ""
 ---
