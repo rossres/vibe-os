@@ -28,7 +28,7 @@ describe("EnricherService", () => {
 			.insert(accounts)
 			.values({
 				name: "__test_enricher_account__",
-				vertical: "spa-wellness",
+				vertical: "test-segment-b",
 			})
 			.returning({ id: accounts.id });
 		testAccountId = rows[0].id;

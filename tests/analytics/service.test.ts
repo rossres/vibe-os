@@ -38,7 +38,7 @@ describe("AnalyticsService", () => {
 		const snapshot: MetricSnapshot = {
 			source: "posthog",
 			metricType: "funnel",
-			dimensions: { vertical: "nail-beauty" },
+			dimensions: { vertical: "test-segment-a" },
 			values: { totalEvents: 500, uniqueUsers: 120 },
 			periodStart: TEST_PERIOD_START,
 			periodEnd: TEST_PERIOD_END,
@@ -62,7 +62,7 @@ describe("AnalyticsService", () => {
 		expect(stored.source).toBe("posthog");
 		expect(stored.metricType).toBe("funnel");
 		expect(JSON.parse(stored.values)).toEqual({ totalEvents: 500, uniqueUsers: 120 });
-		expect(JSON.parse(stored.dimensions!)).toEqual({ vertical: "nail-beauty" });
+		expect(JSON.parse(stored.dimensions!)).toEqual({ vertical: "test-segment-a" });
 	});
 
 	it("pull returns a report with sources pulled", async () => {

@@ -14,14 +14,14 @@ describe("Policy Tools", () => {
       await saveSystemCharterFn({
         charter: {
           phase: "phase_1_prove_vertical",
-          verticals: { primary: "med-spa", shadow: ["dental"], allocation: { "med-spa": 0.85, "dental": 0.15 } },
+          verticals: { primary: "test-segment-a", shadow: ["test-segment-b"], allocation: { "test-segment-a": 0.85, "test-segment-b": 0.15 } },
         },
         createdBy: "test",
       });
       const result = await getVerticalAllocationFn();
-      expect(result.primary).toBe("med-spa");
-      expect(result.shadow).toEqual(["dental"]);
-      expect(result.allocation["med-spa"]).toBe(0.85);
+      expect(result.primary).toBe("test-segment-a");
+      expect(result.shadow).toEqual(["test-segment-b"]);
+      expect(result.allocation["test-segment-a"]).toBe(0.85);
     });
   });
 

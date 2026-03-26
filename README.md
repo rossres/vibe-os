@@ -75,8 +75,8 @@ You talk to Coco. Coco talks to the team. You make decisions on escalations. The
 
 As your business grows, Coco recommends new capabilities:
 
-- **Experiments** — "Your med-spa outreach is converting at 16%. Ready to A/B test subject lines?"
-- **New verticals** — "HVAC is showing early promise. Want to promote it from shadow to primary?"
+- **Experiments** — "Your primary segment is converting at 16%. Ready to A/B test subject lines?"
+- **New verticals** — "Your secondary segment is showing early promise. Want to promote it?"
 - **New channels** — "Email is working. Ready to add Google Ads?"
 - **New agents** — "You need a Creative Director. Want to activate one?"
 

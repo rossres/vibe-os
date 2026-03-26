@@ -9,7 +9,7 @@ import type { SystemCharter } from "../../src/core/types/marketing-engine";
 const testCharter: SystemCharter = {
   phase: "phase_1_prove_vertical",
   primaryGoal: { metric: "customers_acquired", target: 50, timelineDays: 90 },
-  verticals: { primary: "med-spa", shadow: ["dental"], allocation: { "med-spa": 0.85, "dental": 0.15 } },
+  verticals: { primary: "test-segment-a", shadow: ["test-segment-b"], allocation: { "test-segment-a": 0.85, "test-segment-b": 0.15 } },
   icp: { signals: ["missed_call_review"], disqualifiers: ["low_call_volume"] },
   messaging: { canonicalPositioning: "AI front desk", canonicalOffer: "claim it", allowedClaims: ["never miss"], forbiddenClaims: ["replaces staff"], cta: "Claim your number" },
   channels: { active: ["email"], restricted: ["cold_call"], expansionOrder: ["sms"], callsAllowed: false, smsAllowed: true },

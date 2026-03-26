@@ -32,7 +32,7 @@ describe("Shared Tools", () => {
       const taskId = await createAgentTaskFn({
         fromAgent: "ai-coo-lite", toAgent: "content-director",
         taskType: "content_request", priority: "high",
-        payload: { type: "cold_email", vertical: "med-spa" },
+        payload: { type: "cold_email", vertical: "test-segment-a" },
       });
       expect(taskId).toBeDefined();
       const result = await db.select().from(agentTasks).where(eq(agentTasks.id, taskId));

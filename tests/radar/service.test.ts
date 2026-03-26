@@ -17,7 +17,7 @@ describe("RadarService", () => {
 			.insert(accounts)
 			.values({
 				name: "__test_radar_account__",
-				vertical: "nail-beauty",
+				vertical: "test-segment-a",
 				employeeCount: "5",
 				reviewCount: 30,
 				googleRating: 4.2,

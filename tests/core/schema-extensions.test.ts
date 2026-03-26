@@ -43,7 +43,7 @@ describe("Marketing Engine Schema Extensions", () => {
       const directive = {
         id: testId,
         horizon: "quarterly",
-        title: "Acquire 50 med spa customers",
+        title: "Acquire 50 customers in primary segment",
         measurableTarget: "50",
         currentValue: "0",
         targetValue: "50",
@@ -68,7 +68,7 @@ describe("Marketing Engine Schema Extensions", () => {
         toAgent: "content-director",
         taskType: "content_request",
         priority: "normal",
-        payload: JSON.stringify({ type: "cold_email", vertical: "med-spa" }),
+        payload: JSON.stringify({ type: "cold_email", vertical: "test-segment-a" }),
         status: "pending",
         createdAt: new Date().toISOString(),
       };
@@ -115,7 +115,7 @@ describe("Experiment tables", () => {
       ownerAgent: "growth-lead",
       primaryMetric: "open_rate",
       minSampleSize: 1000,
-      vertical: "med-spa",
+      vertical: "test-segment-a",
       status: "draft",
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -168,7 +168,7 @@ describe("Operational tables", () => {
     await db.insert(verticalPerformanceDaily).values({
       id: testId,
       performanceDate: "2026-03-23",
-      vertical: "med-spa",
+      vertical: "test-segment-a",
       accountsIdentified: 50,
       outreachSent: 23,
       replies: 4,

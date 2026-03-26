@@ -5,7 +5,7 @@ import type { SignalData } from "../../src/radar/scoring.js";
 describe("scoreAccount", () => {
 	it("returns correct fitScore for tier A vertical", () => {
 		const result = scoreAccount({
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			reviewCount: 60,
 			googleRating: 4.5,
 			employeeCount: "5",
@@ -44,7 +44,7 @@ describe("scoreAccount", () => {
 		const recentDate = new Date(now.getTime() - 1 * 24 * 60 * 60 * 1000).toISOString();
 
 		const highResult = scoreAccount({
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			reviewCount: 60,
 			googleRating: 4.5,
 			employeeCount: "5",
@@ -68,7 +68,7 @@ describe("scoreAccount", () => {
 
 		// High fit, no intent
 		const fitOnly = scoreAccount({
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			reviewCount: 60,
 			googleRating: 4.5,
 			employeeCount: "5",
@@ -110,7 +110,7 @@ describe("scoreAccount", () => {
 
 	it("caps fitScore at 100", () => {
 		const result = scoreAccount({
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			reviewCount: 100,
 			googleRating: 5.0,
 			employeeCount: "5",

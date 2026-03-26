@@ -19,9 +19,9 @@ const CATEGORY_PATTERNS: Array<{ pattern: RegExp; category: KnowledgeCategory }>
 	{ pattern: /brand[_-]?voice|tone|vocabulary/i, category: "brand_voice" },
 	{ pattern: /pricing|price|tier|cost/i, category: "pricing" },
 	{ pattern: /competitive|competitor|versus|vs\b|gap/i, category: "competitive" },
-	{ pattern: /persona|sofia|david|rachel|icp|buyer/i, category: "persona" },
+	{ pattern: /persona|icp|buyer/i, category: "persona" },
 	{ pattern: /template|email[_-]?template|sequence/i, category: "template" },
-	{ pattern: /vertical[_-]?playbook|nail|spa|hvac|medical/i, category: "vertical" },
+	{ pattern: /vertical[_-]?playbook|segment|market/i, category: "vertical" },
 	{ pattern: /sop|workflow|funnel|playbook|automation/i, category: "sop" },
 	{ pattern: /messaging|narrative|headline|copy|positioning/i, category: "messaging" },
 ];
@@ -35,9 +35,8 @@ export function categorizeDocument(filename: string, content: string): Knowledge
 }
 
 function extractSubcategory(filename: string, content: string): string | undefined {
-	const verticalMatch = content.match(
-		/\b(nail|beauty|spa|wellness|medical|dental|home[_-]?service|hvac|plumbing|roofing|coffee|restaurant|law|automotive)\b/i
-	);
+	// Extract subcategory from content — looks for vertical/segment markers
+	const verticalMatch = content.match(/vertical:\s*(\S+)/i) || content.match(/segment:\s*(\S+)/i);
 	if (verticalMatch) return verticalMatch[1].toLowerCase();
 	return undefined;
 }

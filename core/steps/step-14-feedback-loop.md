@@ -21,10 +21,10 @@ Pull data from the database and present:
 ```
 PERFORMANCE SUMMARY (last 7 days):
 
-By Vertical:
-  medspa:     50 sent, 8 replies, 2 meetings (16% reply rate)
-  hvac:       45 sent, 3 replies, 0 meetings (6.7% reply rate)
-  plumbing:   30 sent, 5 replies, 1 meeting (16.7% reply rate)
+By Segment:
+  segment-a:  50 sent, 8 replies, 2 meetings (16% reply rate)
+  segment-b:  45 sent, 3 replies, 0 meetings (6.7% reply rate)
+  segment-c:  30 sent, 5 replies, 1 meeting (16.7% reply rate)
 
 By Content Type:
   cold_email: 125 sent, 16 replies (12.8% reply rate)
@@ -46,7 +46,7 @@ For each underperforming segment, diagnose:
 3. **What to do about it** — specific action
 
 Example:
-- "HVAC reply rate is 6.7% vs 16% for medspa. Possible cause: email copy doesn't match HVAC urgency. Recommendation: regenerate HVAC cold emails with emergency-first framing."
+- "Segment B reply rate is 6.7% vs 16% for Segment A. Possible cause: email copy doesn't match this segment's pain points. Recommendation: regenerate Segment B emails with more targeted framing."
 
 ### Phase 3: ICP Weight Updates
 
@@ -62,12 +62,12 @@ For each recommended action, add to the re-run queue:
 ```yaml
 rerun_queue:
   - step: 8
-    scope: "hvac x primary — 3 new email variants with emergency framing"
-    reason: "HVAC reply rate 6.7% vs 16% average"
+    scope: "segment-b x primary — 3 new email variants with targeted framing"
+    reason: "Segment B reply rate 6.7% vs 16% average"
     added: "{today}"
   - step: 13
-    scope: "New experiment: long-form vs short-form for plumbing"
-    reason: "Plumbing shows promise but small sample"
+    scope: "New experiment: long-form vs short-form for segment-c"
+    reason: "Segment C shows promise but small sample"
     added: "{today}"
 ```
 

@@ -101,7 +101,7 @@ governance:
 # Market segments you target. Organize by priority tier.
 # Full vertical definitions go in config/verticals.yaml
 verticals:
-  tier_a: []                  # Highest priority (e.g., ["medspa", "hvac", "plumbing"])
+  tier_a: []                  # Highest priority (e.g., ["segment-a", "segment-b", "segment-c"])
   tier_b: []                  # Secondary
   tier_c: []                  # Exploratory
 

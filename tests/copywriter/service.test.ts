@@ -71,7 +71,7 @@ describe("CopywriterService", () => {
 	it("generates cold_email content with variants", async () => {
 		const result = await copywriter.generate({
 			type: "cold_email",
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			persona: "sofia",
 			stage: "identified",
 			variants: 3,
@@ -91,7 +91,7 @@ describe("CopywriterService", () => {
 	it("generates ad_copy content", async () => {
 		const result = await copywriter.generate({
 			type: "ad_copy",
-			vertical: "medical-dental",
+			vertical: "test-segment-c",
 			persona: "david",
 			stage: "consider",
 			platform: "google_ads",
@@ -106,7 +106,7 @@ describe("CopywriterService", () => {
 	it("generates social_post content", async () => {
 		const result = await copywriter.generate({
 			type: "social_post",
-			vertical: "spa-wellness",
+			vertical: "test-segment-b",
 			persona: "rachel",
 			stage: "interested",
 			platform: "linkedin_organic",
@@ -121,7 +121,7 @@ describe("CopywriterService", () => {
 	it("generates blog_post content", async () => {
 		const result = await copywriter.generate({
 			type: "blog_post",
-			vertical: "home-services",
+			vertical: "test-segment-d",
 			persona: "sofia",
 			stage: "aware",
 		});
@@ -135,7 +135,7 @@ describe("CopywriterService", () => {
 	it("generates sms content", async () => {
 		const result = await copywriter.generate({
 			type: "sms",
-			vertical: "hvac",
+			vertical: "test-segment-c",
 			persona: "sofia",
 			stage: "selecting",
 		});
@@ -149,7 +149,7 @@ describe("CopywriterService", () => {
 	it("saves output to file system", async () => {
 		const result = await copywriter.generate({
 			type: "cold_email",
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			persona: "sofia",
 			stage: "identified",
 		});
@@ -163,7 +163,7 @@ describe("CopywriterService", () => {
 	it("revises previous output with feedback", async () => {
 		const original = await copywriter.generate({
 			type: "cold_email",
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			persona: "sofia",
 			stage: "identified",
 		});

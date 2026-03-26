@@ -28,17 +28,14 @@ interface PlaceResult {
 	}>;
 }
 
+/**
+ * Vertical-to-search-query mapping.
+ * Add your verticals and their Google Places search terms here,
+ * or pass custom queries to the discover() method.
+ */
 const VERTICAL_SEARCH_QUERIES: Record<string, string[]> = {
-	"med-spa": ["med spa", "medical spa", "medspa", "aesthetic clinic"],
-	dental: ["dental office", "dentist", "dental clinic"],
-	hvac: ["hvac company", "heating and cooling", "air conditioning repair"],
-	"nail-beauty": ["nail salon", "beauty salon"],
-	plumbing: ["plumber", "plumbing company"],
-	"spa-wellness": ["day spa", "wellness spa"],
-	chiropractic: ["chiropractor", "chiropractic office"],
-	veterinary: ["veterinarian", "vet clinic", "animal hospital"],
-	automotive: ["auto repair", "mechanic shop"],
-	roofing: ["roofing company", "roofer"],
+	// Examples — replace or extend with your verticals:
+	// "your-vertical": ["search term 1", "search term 2"],
 };
 
 // Default cities to search — expand as needed

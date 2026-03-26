@@ -58,7 +58,7 @@ describe("CampaignService", () => {
 			objective: "awareness",
 			budget: 500,
 			budgetPeriod: "daily",
-			vertical: "nail-beauty",
+			vertical: "test-segment-a",
 			stageTarget: "identified",
 		});
 
@@ -134,7 +134,7 @@ describe("CampaignService", () => {
 
 		const result = await service.addAdGroup(created.data.id, {
 			name: "__test_ad_group_1",
-			targeting: "nail salons near me",
+			targeting: "target audience near me",
 		});
 
 		expect(result.ok).toBe(true);
@@ -144,7 +144,7 @@ describe("CampaignService", () => {
 		expect(result.data.campaignId).toBe(created.data.id);
 		expect(result.data.name).toBe("__test_ad_group_1");
 		expect(result.data.platform).toBe("google_ads");
-		expect(result.data.targeting).toBe("nail salons near me");
+		expect(result.data.targeting).toBe("target audience near me");
 	});
 
 	it("addKeyword creates keyword linked to ad group", async () => {
@@ -160,7 +160,7 @@ describe("CampaignService", () => {
 		if (!ag.ok) throw new Error("Setup failed");
 
 		const result = await service.addKeyword(ag.data.id, {
-			keyword: "__test_nail salon software",
+			keyword: "__test_target_keyword",
 			matchType: "phrase",
 			bid: 2.5,
 		});
@@ -170,7 +170,7 @@ describe("CampaignService", () => {
 
 		expect(result.data.id).toBeGreaterThan(0);
 		expect(result.data.adGroupId).toBe(ag.data.id);
-		expect(result.data.keyword).toBe("__test_nail salon software");
+		expect(result.data.keyword).toBe("__test_target_keyword");
 		expect(result.data.matchType).toBe("phrase");
 		expect(result.data.bid).toBe(2.5);
 	});
@@ -213,7 +213,7 @@ describe("CampaignService", () => {
 
 		await service.addAd(ag.data.id, { platform: "google_ads" });
 		await service.addKeyword(ag.data.id, {
-			keyword: "__test_nail salon",
+			keyword: "__test_keyword",
 			matchType: "broad",
 		});
 

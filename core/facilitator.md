@@ -223,8 +223,8 @@ When Step 14 (Feedback Loop) identifies underperforming verticals, personas, or 
 ```yaml
 rerun_queue:
   - step: 8
-    scope: "medspa × sofia — 3 more email variants"
-    reason: "Medspa converting at 2.1x average, underrepresented in content"
+    scope: "segment-a × primary persona — 3 more email variants"
+    reason: "Segment A converting at 2.1x average, underrepresented in content"
     added: "2026-03-24"
 ```
 

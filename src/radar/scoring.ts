@@ -21,9 +21,16 @@ export interface AccountScore {
 	tier: 1 | 2 | 3;
 }
 
-// Tier A verticals get highest fit bonus
-const TIER_A_VERTICALS: VerticalSlug[] = ["nail-beauty", "spa-wellness"];
-const TIER_B_VERTICALS: VerticalSlug[] = ["medical-dental", "home-services"];
+// Tier A/B verticals are loaded from config at runtime.
+// These defaults are empty — the BrainService populates them from brand.yaml.
+let TIER_A_VERTICALS: VerticalSlug[] = [];
+let TIER_B_VERTICALS: VerticalSlug[] = [];
+
+/** Called by the engine to set tier verticals from config */
+export function setTierVerticals(tierA: VerticalSlug[], tierB: VerticalSlug[]): void {
+	TIER_A_VERTICALS = tierA;
+	TIER_B_VERTICALS = tierB;
+}
 
 const SIGNAL_BASE_VALUES: Partial<Record<SignalType, number>> = {
 	missed_call_review: 25,

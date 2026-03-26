@@ -11,7 +11,7 @@ import type { SystemCharter } from "../../../src/core/types/marketing-engine";
 const testCharter: SystemCharter = {
   phase: "phase_1_prove_vertical",
   primaryGoal: { metric: "customers_acquired", target: 50, timelineDays: 90 },
-  verticals: { primary: "med-spa", shadow: ["dental"], allocation: { "med-spa": 0.85, "dental": 0.15 } },
+  verticals: { primary: "test-segment-a", shadow: ["test-segment-b"], allocation: { "test-segment-a": 0.85, "test-segment-b": 0.15 } },
   icp: { signals: ["missed_call_review"], disqualifiers: ["low_call_volume"] },
   messaging: {
     canonicalPositioning: "AI front desk for local businesses",
@@ -43,7 +43,7 @@ describe("Workflow Definitions", () => {
     });
 
     it("rejects allocation not summing to 1.0", async () => {
-      const bad = { ...testCharter, verticals: { ...testCharter.verticals, allocation: { "med-spa": 0.5, "dental": 0.1 } } };
+      const bad = { ...testCharter, verticals: { ...testCharter.verticals, allocation: { "test-segment-a": 0.5, "test-segment-b": 0.1 } } };
       await expect(initializeSystem(bad, "ceo")).rejects.toThrow("Allocation weights must sum to 1.0");
     });
 
@@ -53,7 +53,7 @@ describe("Workflow Definitions", () => {
     });
 
     it("rejects more than 2 shadow verticals", async () => {
-      const bad = { ...testCharter, verticals: { ...testCharter.verticals, shadow: ["dental", "hvac", "plumbing"] as any, allocation: { "med-spa": 0.7, "dental": 0.1, "hvac": 0.1, "plumbing": 0.1 } } };
+      const bad = { ...testCharter, verticals: { ...testCharter.verticals, shadow: ["test-segment-b", "test-segment-c", "test-segment-d"] as any, allocation: { "test-segment-a": 0.7, "test-segment-b": 0.1, "test-segment-c": 0.1, "test-segment-d": 0.1 } } };
       await expect(initializeSystem(bad, "ceo")).rejects.toThrow("Maximum 2 shadow verticals");
     });
   });

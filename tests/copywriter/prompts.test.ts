@@ -33,7 +33,7 @@ describe("Prompt Builder", () => {
 		it("builds cold email prompt with vertical context and sequence instructions", () => {
 			const prompt = buildGenerationPrompt(brain, {
 				type: "cold_email",
-				vertical: "nail-beauty",
+				vertical: "test-segment-a",
 				persona: "sofia",
 				stage: "identified",
 				variants: 3,
@@ -49,7 +49,7 @@ describe("Prompt Builder", () => {
 		it("builds ad copy prompt with platform-specific format specs", () => {
 			const prompt = buildGenerationPrompt(brain, {
 				type: "ad_copy",
-				vertical: "medical-dental",
+				vertical: "test-segment-c",
 				persona: "david",
 				stage: "consider",
 				platform: "google_ads",
@@ -64,7 +64,7 @@ describe("Prompt Builder", () => {
 		it("builds social post prompt with platform name", () => {
 			const prompt = buildGenerationPrompt(brain, {
 				type: "social_post",
-				vertical: "spa-wellness",
+				vertical: "test-segment-b",
 				persona: "rachel",
 				stage: "interested",
 				platform: "linkedin_organic",
@@ -78,7 +78,7 @@ describe("Prompt Builder", () => {
 		it("builds blog post prompt with keyword and word count", () => {
 			const prompt = buildGenerationPrompt(brain, {
 				type: "blog_post",
-				vertical: "home-services",
+				vertical: "test-segment-d",
 				persona: "sofia",
 				stage: "aware",
 			});
@@ -92,7 +92,7 @@ describe("Prompt Builder", () => {
 		it("includes messaging framework when vertical, persona, and stage are set", () => {
 			const prompt = buildGenerationPrompt(brain, {
 				type: "cold_email",
-				vertical: "nail-beauty",
+				vertical: "test-segment-a",
 				persona: "sofia",
 				stage: "identified",
 			});

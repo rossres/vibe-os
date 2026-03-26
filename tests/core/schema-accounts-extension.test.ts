@@ -9,21 +9,21 @@ describe("Extended account columns", () => {
 
   it("supports primary_vertical and source_vertical columns", async () => {
     const result = await db.insert(accounts).values({
-      name: `Test Med Spa ${crypto.randomUUID().slice(0, 8)}`,
-      vertical: "med-spa",
-      primaryVertical: "med-spa",
-      sourceVertical: "med-spa",
+      name: `Test Business ${crypto.randomUUID().slice(0, 8)}`,
+      vertical: "test-segment-a",
+      primaryVertical: "test-segment-a",
+      sourceVertical: "test-segment-a",
       stage: "identified",
     }).returning();
-    expect(result[0].primaryVertical).toBe("med-spa");
-    expect(result[0].sourceVertical).toBe("med-spa");
+    expect(result[0].primaryVertical).toBe("test-segment-a");
+    expect(result[0].sourceVertical).toBe("test-segment-a");
   });
 
   it("supports last_outreach_at, qualified_at, customer_at columns", async () => {
     const now = new Date().toISOString();
     const result = await db.insert(accounts).values({
       name: `Test Spa ${crypto.randomUUID().slice(0, 8)}`,
-      vertical: "med-spa",
+      vertical: "test-segment-a",
       lastOutreachAt: now,
     }).returning();
     expect(result[0].lastOutreachAt).toBe(now);

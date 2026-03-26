@@ -27,7 +27,7 @@ describe("Document categorization", () => {
 	it("categorizes vertical playbook as vertical", () => {
 		const category = categorizeDocument(
 			"vertical-playbooks.md",
-			"## Nail/Beauty\nTop 3 moves"
+			"## Segment A\nTop 3 moves"
 		);
 		expect(category).toBe("vertical");
 	});
@@ -35,7 +35,7 @@ describe("Document categorization", () => {
 	it("categorizes email templates as template", () => {
 		const category = categorizeDocument(
 			"email-templates.md",
-			"## Cold Email Sequences\n### HVAC"
+			"## Cold Email Sequences\n### Segment C"
 		);
 		expect(category).toBe("template");
 	});

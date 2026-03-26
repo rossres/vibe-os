@@ -55,9 +55,9 @@ describe("SystemCharter interface", () => {
         timelineDays: 90,
       },
       verticals: {
-        primary: "med-spa",
-        shadow: ["dental"],
-        allocation: { "med-spa": 0.85, "dental": 0.15 },
+        primary: "test-segment-a",
+        shadow: ["test-segment-b"],
+        allocation: { "test-segment-a": 0.85, "test-segment-b": 0.15 },
       },
       icp: {
         signals: ["missed_call_review", "booking_friction"],
@@ -98,6 +98,6 @@ describe("SystemCharter interface", () => {
     };
     expect(charter.primaryGoal.target).toBe(50);
     expect(charter.messaging.cta).toBe("Claim your number");
-    expect(charter.verticals.primary).toBe("med-spa");
+    expect(charter.verticals.primary).toBe("test-segment-a");
   });
 });
